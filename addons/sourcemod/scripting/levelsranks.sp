@@ -19,7 +19,7 @@
 #endif
 
 #if !defined PLUGIN_INT_VERSION || PLUGIN_INT_VERSION != 03010702
-#error This plugin can only compile on lvl_ranks.inc v3.1.7-cssv34.
+#error This plugin can only compile on lvl_ranks.inc v3.8.0
 #endif
 
 #define PLUGIN_NAME "Levels Ranks"
