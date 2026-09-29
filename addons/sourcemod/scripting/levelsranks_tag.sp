@@ -16,7 +16,7 @@ public Plugin myinfo =
     name = "LR Team Chat",
     author = "Woobbie",
     description = "",
-    version = "3.5.0"
+    version = "3.5.1"
 };
 
 ConVar g_cvEnablePlugin;
@@ -66,6 +66,7 @@ char g_sColorDefaultMsg[16];
 #define COLOR_WHITE "\x01"
 
 // OnPluginStart
+
 public void OnPluginStart()
 {
     g_cvEnablePlugin   = CreateConVar("sm_lr_tags_enable", "1", "Enable plugin", FCVAR_NOTIFY, true, 0.0, true, 1.0);
@@ -115,6 +116,7 @@ public void OnPluginStart()
 }
 
 // HookAllColorCvars
+
 void HookAllColorCvars()
 {
     HookConVarChange(g_cvColorRankTag, ConVarChanged_ReloadColors);
@@ -132,18 +134,21 @@ void HookAllColorCvars()
 }
 
 // ConVarChanged_ReloadColors
+
 public void ConVarChanged_ReloadColors(ConVar convar, const char[] oldValue, const char[] newValue)
 {
     RefreshColorCache();
 }
 
 // OnClientDisconnect
+
 public void OnClientDisconnect(int client)
 {
     g_bProcessing[client] = false;
 }
 
 // Command_ReloadTags
+
 public Action Command_ReloadTags(int client, int args)
 {
     LoadRankTagsExact();
@@ -152,6 +157,7 @@ public Action Command_ReloadTags(int client, int args)
 }
 
 // Command_ReloadRankColors
+
 public Action Command_ReloadRankColors(int client, int args)
 {
     LoadRankColors();
@@ -160,6 +166,7 @@ public Action Command_ReloadRankColors(int client, int args)
 }
 
 // Command_ReloadChatCfg
+
 public Action Command_ReloadChatCfg(int client, int args)
 {
     RefreshColorCache();
@@ -168,6 +175,7 @@ public Action Command_ReloadChatCfg(int client, int args)
 }
 
 // IsHexChar
+
 bool IsHexChar(char c)
 {
     return ((c >= '0' && c <= '9') ||
@@ -176,6 +184,7 @@ bool IsHexChar(char c)
 }
 
 // NormalizeColorString
+
 void NormalizeColorString(const char[] input, char[] output, int maxlen)
 {
     output[0] = '\0';
@@ -282,6 +291,7 @@ void NormalizeColorString(const char[] input, char[] output, int maxlen)
 }
 
 // GetConVarEasyColor
+
 void GetConVarEasyColor(ConVar cvar, char[] output, int maxlen)
 {
     char value[32];
@@ -290,6 +300,7 @@ void GetConVarEasyColor(ConVar cvar, char[] output, int maxlen)
 }
 
 // RefreshColorCache
+
 void RefreshColorCache()
 {
     GetConVarEasyColor(g_cvColorRankTag, g_sColorRankTag, sizeof(g_sColorRankTag));
@@ -307,6 +318,7 @@ void RefreshColorCache()
 }
 
 // LoadRankTagsExact
+
 void LoadRankTagsExact()
 {
     g_iRankTagCount = 0;
@@ -355,6 +367,7 @@ void LoadRankTagsExact()
 }
 
 // LoadRankColors
+
 void LoadRankColors()
 {
     for (int i = 0; i < sizeof(g_sRankColors); i++)
@@ -394,6 +407,7 @@ void LoadRankColors()
 }
 
 // GetRankTag
+
 void GetRankTag(int client, char[] buffer, int maxlen)
 {
     buffer[0] = '\0';
@@ -432,6 +446,7 @@ void GetRankTag(int client, char[] buffer, int maxlen)
 }
 
 // GetTeamPrefix
+
 void GetTeamPrefix(int client, char[] buffer, int maxlen)
 {
     buffer[0] = '\0';
@@ -461,6 +476,7 @@ void GetTeamPrefix(int client, char[] buffer, int maxlen)
 }
 
 // GetNameColor
+
 void GetNameColor(int client, char[] buffer, int maxlen)
 {
     switch (GetClientTeam(client))
@@ -485,6 +501,7 @@ void GetNameColor(int client, char[] buffer, int maxlen)
 }
 
 // GetMessageColor
+
 void GetMessageColor(int client, char[] buffer, int maxlen)
 {
     switch (GetClientTeam(client))
@@ -509,6 +526,7 @@ void GetMessageColor(int client, char[] buffer, int maxlen)
 }
 
 // IsFormattedMessage
+
 bool IsFormattedMessage(const char[] text)
 {
     if (StrContains(text, "[CT]", false) != -1)   return true;
@@ -519,6 +537,7 @@ bool IsFormattedMessage(const char[] text)
 }
 
 // Command_Say
+
 public Action Command_Say(int client, const char[] command, int argc)
 {
     if (!GetConVarBool(g_cvEnablePlugin))
