@@ -23,8 +23,8 @@
 #endif
 
 #define PLUGIN_NAME "Levels Ranks"
-#define PLUGIN_AUTHORS ""
-#define PLUGIN_URL ""
+#define PLUGIN_AUTHORS "Woobbie"
+#define PLUGIN_URL "https://github.com/Woobb1e/LevelsRanks"
 
 #include "levels_ranks/defines.sp"
 
@@ -89,6 +89,7 @@ public Plugin myinfo =
 };
 
 // OnPluginStart
+
 public void OnPluginStart()
 {
 	LoadTranslations("core.phrases");
@@ -107,6 +108,7 @@ public void OnPluginStart()
 }
 
 // OnMapStart
+
 public void OnMapStart()
 {
 	if(g_Settings[LR_IsLevelSound])
@@ -127,6 +129,7 @@ public void OnMapStart()
 }
 
 // OnPluginEnd
+
 public void OnPluginEnd()
 {
 	for(int i = GetMaxPlayers(); --i;)
