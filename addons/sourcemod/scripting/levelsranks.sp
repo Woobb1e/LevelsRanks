@@ -23,7 +23,7 @@
 #endif
 
 #define PLUGIN_NAME "Levels Ranks"
-#define PLUGIN_AUTHORS "Woobbie"
+#define PLUGIN_AUTHORS "Woobbie x Levels Ranks Team"
 #define PLUGIN_URL "https://github.com/Woobb1e/LevelsRanks"
 
 #include "levels_ranks/defines.sp"
