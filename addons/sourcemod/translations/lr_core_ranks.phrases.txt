@@ -1,0 +1,95 @@
+"Phrases"
+{
+	//	The block name from ( addons/sourcemod/configs/levels_ranks/settings_ranks.ini ) selects the matching phrase block below
+	//	Example: if the rank block in settings_ranks.ini is named rank_3, the phrase block used will also be named rank_3
+	//		en - rank name for players using English in the game
+	//
+	//	Usage example:
+	//	The rank block with values from addons/sourcemod/configs/levels_ranks/settings_ranks.ini
+	//	"rank_3"
+	//	{
+	//		"value_2"		"900"
+	//		"value_1"		"800"
+	//		"value_0"		"25"
+	//	}
+	//
+	//	The rank block with the translation from this file
+	//	"rank_3"
+	//	{
+	//		"en"		"Silver III"
+	//	}
+	//
+
+	"rank_1"
+	{
+		"en"		"Silver I"
+	}
+	"rank_2"
+	{
+		"en"		"Silver II"
+	}
+	"rank_3"
+	{
+		"en"		"Silver III"
+	}
+	"rank_4"
+	{
+		"en"		"Silver IV"
+	}
+	"rank_5"
+	{
+		"en"		"Silver Elite"
+	}
+	"rank_6"
+	{
+		"en"		"Silver Elite Master"
+	}
+	"rank_7"
+	{
+		"en"		"Gold Nova I"
+	}
+	"rank_8"
+	{
+		"en"		"Gold Nova II"
+	}
+	"rank_9"
+	{
+		"en"		"Gold Nova III"
+	}
+	"rank_10"
+	{
+		"en"		"Gold Nova Master"
+	}
+	"rank_11"
+	{
+		"en"		"Master Guardian I"
+	}
+	"rank_12"
+	{
+		"en"		"Master Guardian II"
+	}
+	"rank_13"
+	{
+		"en"		"Master Guardian Elite"
+	}
+	"rank_14"
+	{
+		"en"		"Distinguished Master Guardian"
+	}
+	"rank_15"
+	{
+		"en"		"Legendary Eagle"
+	}
+	"rank_16"
+	{
+		"en"		"Legendary Eagle Master"
+	}
+	"rank_17"
+	{
+		"en"		"Supreme Master First Class"
+	}
+	"rank_18"
+	{
+		"en"		"The Global Elite"
+	}
+}
