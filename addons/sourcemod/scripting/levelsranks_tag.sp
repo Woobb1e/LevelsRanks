@@ -15,7 +15,7 @@ public Plugin myinfo =
 {
     name = "Levels Ranks Team Chat",
     author = "Woobbie",
-    description = "",
+    description = "https://github.com/Woobb1e/LevelsRanks",
     version = "3.5.1"
 };
 
