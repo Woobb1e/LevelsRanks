@@ -1,5 +1,11 @@
 # LevelsRanks + Rank Tags
 
+| Requirement | Version |
+| :--- | :--- |
+| SourceMod | `1.11+` |
+| ClientMod API | required (`clientmod` + `multicolors` includes for chat colors) |
+| Game | `CS:S V34 Vanilla`   `CS:S ClientMod` |
+
 ## Map :
 ```
 +-- addons/sourcemod/
