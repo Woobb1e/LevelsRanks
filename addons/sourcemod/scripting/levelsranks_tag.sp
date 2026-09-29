@@ -13,7 +13,7 @@
 
 public Plugin myinfo =
 {
-    name = "LR Team Chat",
+    name = "Levels Ranks Team Chat",
     author = "Woobbie",
     description = "",
     version = "3.5.1"
