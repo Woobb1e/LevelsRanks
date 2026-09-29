@@ -1,4 +1,4 @@
-# LevelsRanks Rank Tags
+# LevelsRanks + Rank Tags
 
 ## Map :
 ```
