@@ -16,7 +16,7 @@ separate chat module that shows colored rank and team tags in `say` / `say_team`
 |   
 |   +-- scripting/
 |   | 
-|   |   +-- levelsranks.sp            <- core entry point
+|   |   +-- levelsranks.sp            <- core 
 |   |   +-- levelsranks_tag.sp        <- rank-tag chat module
 |   |   +-- levels_ranks/             <- core modules (included by the core)
 |   |   |   +-- api.sp
@@ -123,14 +123,14 @@ separate chat module that shows colored rank and team tags in `say` / `say_team`
 | `sm_lr_tags_show_teamtag` | `1` | Show the team tag `[T] / [CT] / [SPEC]`. |
 | `sm_lr_tags_show_teamtext` | `0` | Show `(TEAM)` in team chat. |
 | `sm_lr_tags_teamtag_position` | `before_name` | Team tag position: `before_name` or `after_name`. |
-| `sm_lr_tags_color_rank` | `#CBB8D9` | Default rank-tag color. |
-| `sm_lr_tags_color_teamtext` | `#5C9E9A` | `(TEAM)` color. |
-| `sm_lr_tags_color_t_tag` | `#C98B47` | `[T]` color. |
-| `sm_lr_tags_color_ct_tag` | `#5E81AC` | `[CT]` color. |
-| `sm_lr_tags_color_spec_tag` | `#C97B63` | `[SPEC]` color. |
-| `sm_lr_tags_color_t_name` | `#9DBA8A` | T player-name color. |
-| `sm_lr_tags_color_ct_name` | `#7FA6C9` | CT player-name color. |
-| `sm_lr_tags_color_spec_name` | `#D9B86C` | SPEC player-name color. |
+| `sm_lr_tags_color_rank` | `#default` | rank-tag color. |
+| `sm_lr_tags_color_teamtext` | `lightgreen` | `(TEAM)` color. |
+| `sm_lr_tags_color_t_tag` | `red` | `[T]` color. |
+| `sm_lr_tags_color_ct_tag` | `blue` | `[CT]` color. |
+| `sm_lr_tags_color_spec_tag` | `lightgreen` | `[SPEC]` color. |
+| `sm_lr_tags_color_t_name` | `red` | T player-name color. |
+| `sm_lr_tags_color_ct_name` | `blue` | CT player-name color. |
+| `sm_lr_tags_color_spec_name` | `lightgreen` | SPEC player-name color. |
 | `sm_lr_tags_color_t_msg` | `default` | T message color. |
 | `sm_lr_tags_color_ct_msg` | `default` | CT message color. |
 | `sm_lr_tags_color_spec_msg` | `default` | SPEC message color. |
