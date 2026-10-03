@@ -15,6 +15,7 @@ separate chat module that shows colored rank and team tags in `say` / `say_team`
 +-- addons/sourcemod/
 |   
 |   +-- scripting/
+|   | 
 |   |   +-- levelsranks.sp            <- core entry point
 |   |   +-- levelsranks_tag.sp        <- rank-tag chat module
 |   |   +-- levels_ranks/             <- core modules (included by the core)
