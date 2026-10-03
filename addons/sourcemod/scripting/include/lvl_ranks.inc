@@ -3,7 +3,7 @@
 #endif
 #define _levelsranks_included_
 
-#define PLUGIN_VERSION "v3.8.0"
+#define PLUGIN_VERSION "v4.0.0"
 #define PLUGIN_INT_VERSION 03010702
 
 enum LR_HookType
